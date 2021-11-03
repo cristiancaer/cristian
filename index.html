@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- this allow layout multi devise -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mixt tag and RFDA property -->
+    <meta name="description",property='og:description' content="my portfolio">
+    <meta name="keywords" content="portfolio,Cristian Espinosa Rodriguez,Electronic engineer,developer, artificial vision">
+    <meta name="author" content="CAER">
+    <meta name="google" content="notranslate" />
+    <meta property="og:title" content="Cristian Espinosa: Electronic engineer">
+    <!-- it must be a representative image about the site. -->
+    <!-- <meta property="og:image" content="static/icons/title.png"> -->
+    <meta property="og:description" content="Hi I'm Electronic engineer from Colombia,   
+    and enthusiast for technology, artificial vision, software developing and magical realism novels.">
+    <title>Cristian Espinosa</title>
+    <link rel="icon" href="static/icons/title.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/base.css">
+    <script src="https://kit.fontawesome.com/e92fa48c98.js"></script>
+    <!-- Global site tag (gtag.js) -  this allow generate data in Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147891800-1"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-147891800-1');
+  </script> -->
+</head>
+<body class="body page">
+      <!-- Main Hero -->
+  <section class="hero hero-princ is-fullheight">
+    <div class="hero-body">
+      <div class="lang-div">
+        <select id="lang-opt" onchange="selectLan(this)">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+        </select>
+      </div>
+      <div class="container hero-princ-container is-flex f-d-col center-y">
+        <img class="gif-animated" src="static/gifs/portad.gif" alt="portada gif">
+        <div class="hero-princ-content is-flex f-d-col center-y text">
+          <h1 class="title has-text-white has-text-centered">
+            Cristian Espinosa
+          </h1>
+          <h2 class="subtitle has-text-grey-lighter">
+            Electronic engineer | software developer
+          </h2>
+        </div>
+        <div class="social-media">
+          <ul class="col is-flex">
+            <li class="li-smedia">
+                <a href="https://www.linkedin.com/in/cristian-espinosa-rodriguez-056725137/" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin"></i>
+                </a> 
+            </li>
+            <li class="li-smedia">
+              <a href="https://www.youtube.com/channel/UCG7DSDdQPPgDKEgcVn01njw" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+              </a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero-princ-footer">
+        <div class="container">
+          <ul class="menu is-flex center-x">
+            <a href="#about" class="no-deco">
+              <li class="en-opt">About</li>
+              <li class="es-opt">Acerca</li>
+            </a>
+            <li>/</li>
+            <a href="#skills" class="no-deco">
+              <li class="en-opt">Skills</li>
+              <li class="es-opt">Habilidades</li>
+            </a>
+            <li>/</li>
+            <a href="#projects" class="no-deco">
+              <li class="en-opt">Projects</li>
+              <li class="es-opt">Proyectos</li>
+            </a>
+            <li>/</li>
+            <a href="#blog" class="no-deco">
+              <li>Blog</li>
+            </a>
+            <li>/</li>
+            <a href="#contact" onclick="toContact()" class="no-deco">
+              <li class="en-opt">Contact</li>
+              <li class="es-opt">Contacto</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
