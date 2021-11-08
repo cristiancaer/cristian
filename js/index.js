@@ -68,5 +68,19 @@ function openReadMore(id) {
     readMoreSection.style.display = 'none'
     showLessTXT.style.display='none'
   }
- 
+ /**********************************************/
+/*  Main Hero 
+/**********************************************/
+function toContact() {
+  let heroContact = document.getElementsByClassName('hero-contact')
+  let heroContact_0 = heroContact[0]
+
+  let contactEl = document.documentElement.offsetHeight - heroContact_0.offsetHeight
+
+  window.scroll({
+    top: contactEl,
+    left: 0,
+    behavior: 'smooth'
+  })
+}
   
