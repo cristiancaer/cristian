@@ -83,4 +83,25 @@ function toContact() {
     behavior: 'smooth'
   })
 }
+/*  Function on Scroll of About Section
+/**********************************************/
+function onScroll() {
+  let heroContact = document.getElementsByClassName('hero-contact')
+  let heroContact_0 = heroContact[0]
+  
+  let docElScroll = document.documentElement.scrollTop
+
+  if (docElScroll + 1 >= document.documentElement.offsetHeight - heroContact_0.offsetHeight) {
+    heroContact_0.style.zIndex = '0'
+    console.log('Do you want to get in touch? 🖤')
+  } else {
+    heroContact_0.style.zIndex = '-1'
+  }
+}
+/**********************************************/
+/*  Set a Functions when window scrolls
+/**********************************************/
+document.addEventListener("scroll", function() {
+  onScroll()
+})
   
