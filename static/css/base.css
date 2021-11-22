@@ -27,7 +27,8 @@ body.body-page {
   --pacifica: #21635e;
   --applechic: #2b3317;
   --cheerypink: #473838;
-  --grandmapink: #fffefe;
+  --grandbackgroud: #fffefe;
+
 
   --schoolbell: "Schoolbell", cursive;
   --quatrocen: "Quattrocento Sans", sans-serif;
@@ -40,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: var(--grandmapink);
+  color: var(--grandbackgroud);
   text-decoration: underline;
 }
 
@@ -368,7 +369,7 @@ a:hover {
 .hero-contact {
   background-image: linear-gradient(
     141deg,
-    var(--grandmapink) 0%,
+    var(--grandbackgroud) 0%,
     var(--cheerypink) 100%
   );
   color: #ffffff;
@@ -468,7 +469,7 @@ a:hover {
 }
 
 .read-more {
-  color: var(--grandmapink);
+  color: var(--cheerypink);
   cursor: pointer;
 }
 

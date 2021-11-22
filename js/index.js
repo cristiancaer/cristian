@@ -104,4 +104,25 @@ function onScroll() {
 document.addEventListener("scroll", function() {
   onScroll()
 })
+//  skills
+function seeMoreSkills() {
+  let moreSkills = document.getElementsByClassName('more-skills')
+  let moreSkills_0 = moreSkills[0]
+  let moreSkillsBtn = document.getElementsByClassName('skills-more-btn')
+  let moreSkillsBtn_0 = moreSkillsBtn[0]
+
+  moreSkills_0.style.display='block'
+  moreSkillsBtn_0.style.display = 'none'
+  console.log('There are the technologies that I saw')
+}
+function seeLessSkills() {
+  let moreSkills = document.getElementsByClassName('more-skills')
+  let moreSkills_0 = moreSkills[0]
+  let moreSkillsBtn = document.getElementsByClassName('skills-more-btn')
+  let moreSkillsBtn_0 = moreSkillsBtn[0]
+  moreSkills_0.style.display='none'
+  moreSkillsBtn_0.style.display = 'block'
+  // moreSkillsBtn_0.style.display = 'none'
+
+}
   
