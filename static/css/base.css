@@ -223,6 +223,36 @@ a:hover {
   margin-top: -6px;
   font-weight: bold;
 }
+/* certifications */
+.hero.certifications {
+  background-color: #f8f8f8;
+}
+
+
+.container.certifications .container {
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.columns.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-column-gap: 30px;
+  align-items: center;
+}
+/* Skills Images
+/*********************************/
+.columns.certifications .img {
+  text-align: center;
+}
+.columns.certifications .img::after {
+  content: attr(data-desc);
+  color: var(--mightygray);
+  font-size: 12px;
+  display: block;
+  margin-top: -6px;
+  font-weight: bold;
+}
 
 /**************************************************************************************************/
 
