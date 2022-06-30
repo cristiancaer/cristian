@@ -125,4 +125,58 @@ function seeLessSkills() {
   // moreSkillsBtn_0.style.display = 'none'
 
 }
+var projectvar
+function showProject(project) {
+  /* Descriptions and Titles */
+  projectvar = project
+  let title = project.dataset.title
+  let image
+  if (project.dataset.alternative_image){
+    image = project.dataset.alternative_image
+    console.log(true)
+  }else{
+    image = project.children[0].src
+  }
+  console.log(project.dataset.alternative_image)
+  console.log(image)
+  let link = project.dataset.link
+  let desc = project.dataset.desc
+  let tools = project.dataset.tools.split(',')
+  let toolsSize = tools.length
+
+  /* Components of pop up Project */
+  let popup = document.getElementById('project-popup')
+  let projectTitle = document.getElementById('project-name')
+  let projectImage = document.getElementById('project-img')
+  let projectLink = document.getElementById('project-link')
+  let projectDesc = document.getElementById('project-desc')
+  let projectList = document.getElementById('project-list')
   
+  /* Metiendo los datos de data-* en el pop up */
+  projectTitle.textContent = title
+  projectImage.src = image
+  projectLink.href = link
+  projectDesc.textContent = desc
+
+  /* Iterando sobre un array, mientras esto pasa también se crea una lista */
+  for (let i = 0; i < toolsSize; i++) {  
+    let li = document.createElement('li')
+    projectList.appendChild(li)
+    li.textContent = tools[i]
+    li.setAttribute('id', 'project-tool')
+  }
+  popup.style.display = 'flex'
+  popup.classList.replace('d-none', 'popup')
+}
+
+function closeProject() {
+  let popup = document.getElementById('project-popup')
+  let projectList = document.getElementById('project-list')
+
+  let projectListSize = projectList.childElementCount
+
+  for (let i = 0; i < projectListSize; i++) {  
+    projectList.removeChild(projectList.children[0])
+  }
+  popup.style.display = 'none'
+}

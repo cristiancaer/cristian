@@ -264,8 +264,85 @@
     </div>
     
   </div>
+    <!-- Projects -->
+<section class="hero projects" id="projects">
+  <div class="hero-body">
+    <div class="container projects-wrapper is-flex f-d-col center-x">
+      <h1 class="title is-1 has-text-centered en-opt">what projects have I done?</h1>
+      <h1 class="title is-1 has-text-centered es-opt">¿Qué proyectos hice?</h1>
+      <div class="all-projects is-flex center-x center-y f-d-col">
+        <div class="container projects">
+          <!-- Cenicristal -->
+          <div class="column project has-text-centered es-opt">
+            <div 
+              class="img-container" 
+              onclick="showProject(this)" 
+              data-title="Cenicristal"
+              data-link="https://www.cenicana.org/cenicristal/"
+              data-alternative_image="static/images/cenicristal-plot.png"
+              data-desc="Estando en la version 2 de cenicristal me encarge de la refactorización de los bloques de procesamiento de imagenes logrando una disminución de los tiempos de procesamiento mayor al 40%"
+              data-tools="Python, Django"
+              >
+              <img class="project" src="static/images/cenicristal-logo.png" alt="Cenicristal">
+            </div>
+            <a href="https://www.cenicana.org/cenicristal/" class="no-deco" target="_blank">
+              Cenicristal 
+            </a>
+          </div>
+          <div class="column project has-text-centered en-opt">
+            <div 
+              class="img-container" 
+              onclick="showProject(this)" 
+              data-title="Cenicristal"
+              data-link="https://www.cenicana.org/cenicristal/"
+              data-desc="Being in version 2 of cenicristal I was in charge of the refactoring of the image processing blocks achieving a decrease in processing times of more than 40%."
+              data-tools="Python, Django"
+              >
+              <img class="project" src="static/images/cenicristal-logo.png" alt="Cenicristal logo">
+            </div>
+            <a href="https://www.cenicana.org/cenicristal/" class="no-deco" target="_blank">
+              Cenicristal
+            </a>
+          </div>
+          <!-- pop up -->
+          <div id="project-popup" class="hero project d-none">
+            <div class="hero-body is-flex center-y">
+              <a class="close project" onclick="closeProject()">&times;</a>
+              <div class="container">
+                <div class="columns">
+                  <div class="column is-two-thirds is-flex center-y">
+                    <a id="project-link" target="_blank">
+                      <img class="img-project" id="project-img">
+                    </a>
+                  </div>
+                  <div class="column project-desc">
+                    <h4 class="title is-4" id="project-name"></h4>
+                    <div class="characteristics">
+                      <div class="container">
+                        <h5 class="subtitle is-5 en-opt">Technologies</h5>
+                        <h5 class="subtitle is-5 es-opt">Tecnologías</h5>
+                        <ul class="lis" id="project-list">
+                        </ul>
+                      </div>
+          
+                      <div class="container">
+                        <h5 class="subtitle is-5 en-opt">About the Project?</h5>
+                        <h5 class="subtitle is-5 es-opt">¿Acerca del Proyecto?</h5>
+                        <h6 class="subtitle is-6" id="project-desc"></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
+</section>
    <!-- Contact -->
    <section class="hero hero-contact is-fullheight " id="contact">
     <div class="hero-body is-flex f-d-col">
